@@ -1,0 +1,53 @@
+*{
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   box-sizing: border-box;
+}
+
+html{
+    font-size: 16px
+}
+
+body{
+    margin: 0;
+    letter-spacing: -0.3px;
+    font-size: 60px;
+    font-weight: bolder;
+    background-color: #121212;
+}
+
+.sidebar{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    width: 249px;
+    padding: 24px;
+}
+
+header{
+    position: fixed;
+    left:249px;
+    right:0;
+    background-color:#2d393d;
+    width: 100%;
+    height: 64px;
+}
+
+footer{
+    position: absolute;
+    background-color: #181818;
+    z-index: 1;
+    bottom: 0%;
+    height: 90px;
+    width: 100%;
+}
+
+.sidebar img{
+    position: absolute;
+    top:0;
+    margin-top: 23px;
+    width: 131px;
+}
+
+.sidebar .menu{
+    margin-top: 66px;
+}
