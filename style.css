@@ -4,14 +4,14 @@
 }
 
 html{
-    font-size: 16px
+    font-size: 10px
 }
 
 body{
     margin: 0;
     letter-spacing: -0.3px;
-    font-size: 60px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight:400;
     background-color: #121212;
 }
 
@@ -41,7 +41,7 @@ footer{
     width: 100%;
 }
 
-.sidebar img{
+.sidebar .logo{
     position: absolute;
     top:0;
     margin-top: 23px;
@@ -50,4 +50,8 @@ footer{
 
 .sidebar .menu{
     margin-top: 66px;
+}
+
+.sidebar img{
+    width: 24px;
 }
