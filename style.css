@@ -15,25 +15,69 @@ body{
     background-color: #121212;
 }
 
-.sidebar{
-    background-color: black;
-    position: fixed;
-    height: 100%;
-    width: 249px;
-    padding: 24px;
-    font-size: 14px;
-    font-weight: 400;
-}
+
+/*Header*/
 
 header{
     position: fixed;
-    left:249px;
+    left:13%;
     right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    /*tirar cor?*/
     background-color:#2d393d;
-    width: 100%;
+    width: 87%;
     height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
+header .go_back_next button{
+    background: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    outline: 0;
+    opacity: 40%;
+
+    
+}
+
+header .go_back{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+header .go_next{
+    margin-left: 12px;
+}
+
+header .profile_button{
+    align-items: left;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    background-color: #0d1112;
+    padding: 6px 14px 6px 8px;
+    cursor: pointer;
+}
+
+header .profile .user_text{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/*Footer*/
 footer{
     position: absolute;
     background-color: #181818;
@@ -41,6 +85,19 @@ footer{
     bottom: 0%;
     height: 90px;
     width: 100%;
+}
+
+
+/*Sidebar, tá todo comida para tamanhos diferentes :')*/
+
+.sidebar{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    width: 13%;
+    padding: 24px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .sidebar .logo{
