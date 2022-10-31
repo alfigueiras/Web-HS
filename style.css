@@ -21,6 +21,8 @@ body{
     height: 100%;
     width: 249px;
     padding: 24px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 header{
@@ -54,4 +56,54 @@ footer{
 
 .sidebar img{
     width: 24px;
+    margin-right: 16px;
 }
+
+a{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.sidebar .separator {
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid #303030;
+    margin-top: 16px;
+}
+
+.sidebar .install_app{
+    position: absolute;
+    font-weight: 900;
+    bottom:100px;
+}
+
+.sidebar .item{
+    font-weight: 600;
+
+    height: 40px;
+
+}
+
+.sidebar .item2{
+    margin-top: 8px;
+    font-weight: 900;
+    height: 30px;
+
+    
+}
+
+.sidebar .menu2{
+    margin-top: 30px;
+}
+
+.sidebar .playlist{
+    margin-top: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+}
+
