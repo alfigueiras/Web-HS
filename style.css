@@ -76,18 +76,6 @@ header .profile .user_text{
     padding-right: 5px;
 }
 
-
-/*Footer*/
-footer{
-    position: absolute;
-    background-color: #181818;
-    z-index: 1;
-    bottom: 0%;
-    height: 90px;
-    width: 100%;
-}
-
-
 /*Sidebar, tá todo comida para tamanhos diferentes :')*/
 
 .sidebar{
@@ -164,3 +152,108 @@ a{
     align-items: center;
 }
 
+/*Footer*/
+footer{
+    position: absolute;
+    background-color: #181818;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    bottom: 0%;
+    height: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+
+}
+
+footer img{
+    width: 16px;
+}
+
+footer button{
+    background: transparent;
+    border: transparent;
+}
+
+footer .playing_song{
+    display: flex;
+    align-items: center;
+}
+
+footer .playing_song .album_pic{
+    width: 56px;
+}
+
+footer .song_info_bar{
+    padding: 12px;
+    margin-right: 16px;
+}
+
+footer .playing_song .name{
+    font-weight: 500;
+    font-size: 14px;
+    color:#fcfcfc;
+}
+
+
+footer .playing_song .band{
+    font-weight: 400;
+    font-size: 11px;
+    color: #b3b3b3;
+}
+footer .volume_options{
+    display: flex;
+    align-items: center;
+    
+}
+footer .volume_bar{
+    margin-left: 1px;
+    margin-right: 8px;
+    height: 1px;
+    width: 100px;
+    border-top: 2px solid #ffffff;
+}
+
+footer .play_bar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .play_bar #play{
+    width: 32px;
+}
+
+footer .play_bar #next{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+footer .play_bar .play_buttons .center{
+    margin-bottom: 8px;
+}
+
+footer .play_bar .progress_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .play_bar .progress_bar .line{
+    margin-top: 5px;
+    height: 1px;
+    width: 409px;
+    border-top: 2px solid #5e5e5e;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+footer .play_bar .progress_bar .text{
+    font-size: 11px;
+    color: #b3b3b3;
+}
