@@ -166,7 +166,7 @@ section{
 }
 
 section .album{
-    background-color: #2d3a3d;
+    background-image: linear-gradient(#729199,#38484c);
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 24px;
