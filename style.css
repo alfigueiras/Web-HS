@@ -20,13 +20,14 @@ body{
 
 header{
     position: fixed;
-    left:13%;
-    right:0;
+    top:0;
+    left:266px;
+    right: 0;
+    z-index: 1;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    /*tirar cor?*/
-    background-color:#2d393d;
+    background-color:transparent;
     width: 87%;
     height: 64px;
     padding-left: 32px;
@@ -76,13 +77,13 @@ header .profile .user_text{
     padding-right: 5px;
 }
 
-/*Sidebar, tá todo comida para tamanhos diferentes :')*/
-
+/*Sidebar*/
 .sidebar{
     background-color: black;
     position: fixed;
+    top:0px;
     height: 100%;
-    width: 13%;
+    width: 266px;
     padding: 24px;
     font-size: 14px;
     font-weight: 400;
@@ -151,6 +152,84 @@ a{
     display: flex;
     align-items: center;
 }
+
+/*Main*/
+main{
+    position: fixed;
+    left:266px;
+    right: 0px;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+}
+
+section .album{
+    background-color: #2d3a3d;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-top: 103px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+}
+
+section .album #info{
+    padding-left: 24px;
+}
+
+section .album #image{
+    box-shadow: 2px 2px 5px 1px #1b2529;
+}
+
+section .album #info #artist{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+section .album #info #artist img{
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+section .album #info #artist #name{
+    padding-left: 3px;
+    font-weight: 900;
+    color: #fff
+}
+
+section .album #info #artist #date{
+    padding-left: 9px;
+    color: #fff
+}
+
+section .album #info #artist #nmusic{
+    padding-left: 9px;
+    color: #fff
+}
+section .album #info #artist #total_time{
+    padding-left: 9px;
+    color:#b3b3b3
+}
+
+section .album #info #playlist_type{
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+}
+
+section .album #info #title{
+    font-weight: 900;
+    font-size: 48px;
+    color: #fff;
+}
+
 
 /*Footer*/
 footer{
@@ -247,7 +326,7 @@ footer .play_bar .progress_bar .line{
     margin-top: 5px;
     height: 1px;
     width: 409px;
-    border-top: 2px solid #5e5e5e;
+    border-top: 4px solid #5e5e5e;
     margin-left: 5px;
     margin-right: 5px;
     
@@ -257,3 +336,4 @@ footer .play_bar .progress_bar .text{
     font-size: 11px;
     color: #b3b3b3;
 }
+
