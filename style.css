@@ -28,7 +28,6 @@ header{
     justify-content:space-between;
     align-items: center;
     background-color:transparent;
-    width: 87%;
     height: 64px;
     padding-left: 32px;
     padding-right: 32px;
@@ -82,7 +81,7 @@ header .profile .user_text{
     background-color: black;
     position: fixed;
     top:0px;
-    height: 100%;
+    bottom: 0px;
     width: 266px;
     padding: 24px;
     font-size: 14px;
@@ -155,6 +154,8 @@ a{
 
 /*Main*/
 main{
+    height: auto;    
+    overflow: scroll;
     position: fixed;
     left:266px;
     right: 0px;
@@ -230,23 +231,117 @@ section .album #info #title{
     color: #fff;
 }
 
+section .album_buttons{
+    background-image: linear-gradient(#2d393c,#121212);
+    display:flex;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+section .album_buttons div+div{
+    padding-left: 30px;
+}
+
+section .separator {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+section .separator .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .separator .text .left{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 200;
+    color:#b3b3b3
+}
+section .separator .text .left .l1{
+    padding-left: 20px;
+}
+section .separator .text .left .l2{
+    padding-left: 15px;
+}
+
+section .separator .text .right{
+    padding-right: 20px;
+}
+section .separator .line{
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid #303030;
+    margin-top: 16px;
+}
+
+section .songs{
+
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .song{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section .song .left{
+    display: flex;
+    align-items: center;
+}
+
+section .song .left .num{
+    color: #b3b3b3;
+    font-size: 16px;
+    padding-left:16px;
+    padding-right:16px ;
+}
+
+section .song .left .txt .name{
+    font-weight: 500;
+    font-size: 16px;
+    color:#fcfcfc;
+}
+
+section .song .left .txt .band{
+    font-weight: 300;
+    font-size: 14px;
+    color:#b3b3b3;
+}
+
+section .song .right{
+    padding-right: 20px;
+    color:#b3b3b3;
+    font-size: 14px;
+}
+
 
 /*Footer*/
 footer{
     position: absolute;
     background-color: #181818;
+    right:0;
     z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    bottom: 0%;
+    bottom: 0;
     height: 90px;
     padding-left: 16px;
     padding-right: 16px;
     width: 100%;
-
 }
 
 footer img{
