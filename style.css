@@ -335,6 +335,10 @@ section .copyright{
     font-size: 11px;
     color:#b3b3b3
 }
+
+section .copyright .date{
+    font-size: 14px;
+}
 /*Footer*/
 footer{
     position: fixed;
