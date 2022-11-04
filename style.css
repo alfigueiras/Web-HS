@@ -154,10 +154,11 @@ a{
 
 /*Main*/
 main{
-    height: auto;    
-    overflow: scroll;
-    position: fixed;
+    
     left:266px;
+    position:absolute;
+    height: auto;    
+    overflow: auto;
     right: 0px;
 }
 
@@ -325,11 +326,18 @@ section .song .right{
     color:#b3b3b3;
     font-size: 14px;
 }
-
-
+section .copyright{
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    letter-spacing: 0.2px;
+    padding-bottom: 114px;
+    font-size: 11px;
+    color:#b3b3b3
+}
 /*Footer*/
 footer{
-    position: absolute;
+    position: fixed;
     background-color: #181818;
     right:0;
     z-index: 1;
